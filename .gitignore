@@ -1,0 +1,29 @@
+# Virtual environment
+venv/
+
+# Environment variables
+.env
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# VSCode
+.vscode/
+.idea/
+
+# OS junk
+.DS_Store
+
+# Django
+db.sqlite3
+*.log
+
+# Static files (if collected for production)
+staticfiles/
+
+# React build
+build/
+
+# Node modules
+node_modules/
