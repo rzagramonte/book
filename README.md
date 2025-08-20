@@ -5,7 +5,7 @@ Book brings people together through a shared love of reading, with real-time gro
 
 ## How It's Made:
 
-**Tech used:** React, CSS, Bootstrap, Python, Django, PostgreSQL, Django ORM, Socket.IO, Multer, Cloudinary, and the Hugging Face API  
+**Tech used:** TypeScript, React, Tailwind CSS, Daisy UI, Python, Django, PostgreSQL, Django ORM, Cloudinary, and the Hugging Face API  
 
 I’m currently rebuilding Foodship as Book, a reading community platform that brings people together through real-time group formation, collaborative book selection, and AI-assisted discussion. I’ve kept the original foundation—responsive design, real-time chat via Socket.IO, and event scheduling—while layering in new features like user-generated AI prompts and tailored book recommendations based on group “reader colors.” This rebrand not only updates the mission but also gives me space to deepen my skills in Python, SQL, and React as I flip the stack.
 
