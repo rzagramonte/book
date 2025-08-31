@@ -17,14 +17,6 @@ class Group(models.Model):
         return f"{self.archetype.name} Group {self.id}"
     
     def assign_next_book(self):
-        read_books = self.books_read.all()
-        unread_books = Book.objects.filter(archetype=self.archetype).exclude(id__in=read_books.values_list('id', flat=True))
-
-        if unread_books.exists():
-            next_book = unread_books.first()
-        else:
-            next_book = fetch_new_book(self.archetype)
-
-        self.current_book = next_book
-        self.books_read.add(next_book)
-        self.save()    
+        """Assign the next book to this group using the book assignment service."""
+        from ..services.book_assignment import assign_next_book_to_group
+        return assign_next_book_to_group(self)    
