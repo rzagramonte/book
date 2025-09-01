@@ -4,6 +4,9 @@ Handles computing unread books, selecting next books, and updating group book as
 """
 from django.apps import apps
 
+class BookSourceNotConfigured(Exception):
+    """Raised when no book provider is configured for an archetype."""
+    pass
 
 def get_unread_books(group):
     """
