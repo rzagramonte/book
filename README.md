@@ -4,6 +4,8 @@ Book is a full-stack reading community platform that matches users into archetyp
 
 This project emphasizes production-oriented architecture, domain-layer separation, CI validation, and structured development workflows.
 
+![landing page of Book](https://u.cubeupload.com/rzagramonte/Screenshot20250609at.png)
+
 ---
 
 ## 🚀 Core Features
