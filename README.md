@@ -44,17 +44,6 @@ This project emphasizes production-oriented architecture, domain-layer separatio
 
 ---
 
-## 🧠 Domain Design Highlights
-
-- Book assignment logic is isolated in a service layer
-- Clear separation between:
-  - `current_book` (in progress)
-  - `books_read` (completed)
-- Deterministic book selection to ensure reproducibility
-- Explicit domain-level error handling (`BookSourceNotConfigured`)
-
----
-
 ## 🖥 Local Development
 
 ### Prerequisites
@@ -90,6 +79,33 @@ npm run dev
 
 Backend: http://127.0.0.1:8000  
 Frontend: http://localhost:5173  
+
+---
+
+## 🔐 Configuration
+
+Create a `.env` file in `/backend` using `.env.example`.
+
+Required variables:
+
+```
+SECRET_KEY=
+DEBUG=True
+
+POSTGRESQL_NAME=
+POSTGRESQL_USER=
+POSTGRESQL_PASSWORD=
+POSTGRESQL_HOST=localhost
+POSTGRESQL_PORT=5432
+
+CLOUD_NAME=
+CLOUDINARY_API_KEY=
+CLOUDINARY_API_SECRET=
+
+HF_API_KEY=
+```
+
+These values are loaded in Django via environment variables. Do not commit secrets.
 
 ---
 
