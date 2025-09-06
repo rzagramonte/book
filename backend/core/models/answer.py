@@ -1,9 +1,13 @@
 from django.db import models
-from .question import Question
+
 from .archetype import Archetype
+from .question import Question
+
 
 class AnswerOption(models.Model):
-    question = models.ForeignKey(Question, related_name='options', on_delete=models.CASCADE)
+    question = models.ForeignKey(
+        Question, related_name="options", on_delete=models.CASCADE
+    )
     text = models.TextField()
 
     def __str__(self):
@@ -11,7 +15,9 @@ class AnswerOption(models.Model):
 
 
 class AnswerWeight(models.Model):
-    answer = models.ForeignKey(AnswerOption, related_name='weights', on_delete=models.CASCADE)
+    answer = models.ForeignKey(
+        AnswerOption, related_name="weights", on_delete=models.CASCADE
+    )
     archetype = models.ForeignKey(Archetype, on_delete=models.CASCADE)
     weight = models.IntegerField()
 

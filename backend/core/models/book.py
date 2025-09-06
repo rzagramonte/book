@@ -1,5 +1,7 @@
 from django.db import models
+
 from .archetype import Archetype
+
 
 class Book(models.Model):
     title = models.CharField(max_length=200)

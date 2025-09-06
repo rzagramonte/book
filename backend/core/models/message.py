@@ -1,6 +1,8 @@
 from django.db import models
-from .userprofile import UserProfile
+
 from .group import Group
+from .userprofile import UserProfile
+
 
 class Message(models.Model):
     user = models.ForeignKey(UserProfile, on_delete=models.CASCADE)

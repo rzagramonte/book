@@ -23,6 +23,7 @@ This project emphasizes production-oriented architecture, domain-layer separatio
 ## 🏗 Architecture
 
 ### Backend
+
 - Python
 - Django
 - PostgreSQL
@@ -31,14 +32,17 @@ This project emphasizes production-oriented architecture, domain-layer separatio
 - Service-layer domain logic (e.g., `book_assignment.py`)
 
 ### Frontend
+
 - React
 - Tailwind CSS
 - Component-based architecture
 
 ### AI Integration
+
 - Hugging Face API
 
 ### Infrastructure
+
 - GitHub Actions (CI)
 - Branch-protected `main` workflow
 
@@ -78,7 +82,7 @@ npm run dev
 ```
 
 Backend: http://127.0.0.1:8000  
-Frontend: http://localhost:5173  
+Frontend: http://localhost:5173
 
 ---
 
@@ -123,8 +127,14 @@ python manage.py test
 # Lint
 ruff check .
 
+# Lint and fix
+ruff check . --fix
+
 # Format
 black .
+
+# Check formatting
+black . --check
 ```
 
 ### Frontend (run from `frontend/`)
